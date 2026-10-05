@@ -1,0 +1,19 @@
+{
+  "name": "@dictum/agent",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p .",
+    "quote": "tsx --env-file-if-exists=../.env src/cli/quote.ts"
+  },
+  "dependencies": {
+    "@dictum/shared": "workspace:*",
+    "viem": "^2.57.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "vitest": "^5.0.3"
+  }
+}
